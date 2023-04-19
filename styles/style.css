@@ -1,0 +1,68 @@
+html {
+  font-size: 10px; /* px 은 'pixels' 를 의미합니다: 기본 글자 크기는 현재 10 pixels 높이입니다. */
+  font-family: placeholder: 구글 폰트로부터 여러분이 얻은 마지막 결과가 있어야합니다.
+}
+
+html{
+    background-color:black;
+    height: 100%;
+}
+
+h1{
+    font-size: 25px;
+    text-align: center;
+    color: mediumblue;
+    border: 3px groove darkorange;
+    background-color: yellow;
+    text-shadow: 3px 3px 1px black;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+    overflow: visible;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+}
+
+img{
+    border:7px dotted deeppink;
+    max-height: 300px;
+    max-width: 300px;
+    display: inline;
+    margin: 0;
+}
+
+
+    
+
+h4{
+    font-size: 20px;
+    text-align: center;
+    color: limegreen;
+    padding: 40px;
+    text-shadow: 4px 2px 2px black;
+}
+
+.selfie{
+    padding: 30px;
+    text-align: center;
+
+}
+
+body{
+    width: 900px;
+    height: ;
+    margin: auto;
+    background-color: fuchsia;
+    padding: 20px 20px 20px 20px;
+    border: 5px solid deepskyblue;
+    overflow: auto;
+}
+
+
+
