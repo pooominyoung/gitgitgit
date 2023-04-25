@@ -44,7 +44,7 @@ html{
 }
 
 div{
-    display:list-item;
+    display:block;
 }
 
 
@@ -63,6 +63,24 @@ div{
     overflow: visible;
     height: auto;
     
+}
+
+
+#pagename2{
+  font-family: 'Bangers', cursive;
+  letter-spacing: 4px;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  color: mediumblue;
+  border: 3px solid rgb(0, 255, 0);
+  background-color: yellow;
+  text-shadow: 3px 3px 1px white;
+  padding: 20px 20px 20px 20px;
+  margin: 20px;
+  overflow: visible;
+  height: auto;
+  
 }
 
 p {
@@ -124,6 +142,17 @@ body{
     transition: background 0s;
   }
 
+  #pagename2:hover{
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+     center/15000%;
+    color: white;
+  }
+  
+  #pagename2:active{
+    background-color: #292d3e;
+    background-size: 100%;
+    transition: background 0s;
+  }
 
 #buttonlist{
     margin: auto;
@@ -150,4 +179,36 @@ body{
 }
 button:hover{
   transform: rotateZ(-15deg);
+}
+
+
+form{
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+div label{
+  display: block;
+  padding: 30px;
+  margin: 0 auto;
+  font-size: 25px; 
+  color:rgb(39, 39, 39);
+  text-shadow: 2px 2px 2px rgb(145, 6, 150);
+}
+
+div input{
+  box-sizing: border-box;
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 20px;
+  height: 40px;
+  width: 300px;
+}
+
+div textarea{
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 20px;
+  width: 300px;
+  max-height: 700px;
 }

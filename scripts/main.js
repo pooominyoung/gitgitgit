@@ -44,3 +44,8 @@ heading.onclick = function(){
         window.open('page2.html')
     }
 }
+
+if(pagename2===onclick){
+    style.color="red"
+    window.open('bluefooted.html')
+}
