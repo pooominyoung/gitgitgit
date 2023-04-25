@@ -1,23 +1,68 @@
+/* font-family: 'Barrio', cursive;
+font-family: 'Big Shoulders Stencil Text', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'DotGothic16', sans-serif;
+font-family: 'Faster One', cursive;
+font-family: 'Frijole', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Modak', cursive;
+font-family: 'Monofett', cursive;
+font-family: 'Nosifer', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Reenie Beanie', cursive;
+font-family: 'Rubik Burned', cursive;
+font-family: 'Rubik Dirt', cursive;
+font-family: 'Rubik Puddles', cursive;
+font-family: 'Silkscreen', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Gluten', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Hanalei Fill', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Monofett', cursive;
+font-family: 'Moo Lah Lah', cursive;
+font-family: 'Rubik Bubbles', cursive;
+font-family: 'Rubik Iso', cursive;
+font-family: 'Zilla Slab Highlight', cursive;
+ */
+
+
+
+
+
 html {
   font-size: 10px; /* px 은 'pixels' 를 의미합니다: 기본 글자 크기는 현재 10 pixels 높이입니다. */
-  font-family: placeholder: 구글 폰트로부터 여러분이 얻은 마지막 결과가 있어야합니다.
+  font-family: 'Bangers', cursive;
+  width: 100vw;
 }
 
 html{
     background-color:black;
     height: 100%;
+    align-content: center;
 }
 
-h1{
-    font-size: 25px;
+div{
+    display:list-item;
+}
+
+
+#pagename{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    font-size: 20px;
     text-align: center;
     color: mediumblue;
-    border: 3px groove darkorange;
+    border: 3px solid rgb(0, 255, 0);
     background-color: yellow;
-    text-shadow: 3px 3px 1px black;
+    text-shadow: 3px 3px 1px white;
     padding: 20px 20px 20px 20px;
     margin: 20px;
     overflow: visible;
+    height: auto;
+    
 }
 
 p {
@@ -26,43 +71,83 @@ p {
     letter-spacing: 1px;
     color: black;
     text-shadow: 2px 2px 2px white;
-    text-align: center;
 }
 
 img{
     border:7px dotted deeppink;
     max-height: 300px;
     max-width: 300px;
-    display: inline;
+    /* display: inline; */
     margin: 0;
+    position: contain;
 }
 
 
     
 
 h4{
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     color: limegreen;
     padding: 40px;
     text-shadow: 4px 2px 2px black;
+    letter-spacing: 2px;
+    font-weight: lighter;
 }
 
 .selfie{
     padding: 30px;
     text-align: center;
-
 }
 
 body{
-    width: 900px;
-    height: ;
-    margin: auto;
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
     background-color: fuchsia;
     padding: 20px 20px 20px 20px;
     border: 5px solid deepskyblue;
-    overflow: auto;
+    /* align-content: center; */
 }
 
 
 
+  #pagename:hover{
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+     center/15000%;
+    color: white;
+  }
+  
+  #pagename:active{
+    background-color: #292d3e;
+    background-size: 100%;
+    transition: background 0s;
+  }
+
+
+#buttonlist{
+    margin: auto;
+    width:max-content;
+}
+
+
+ button {
+  border-radius: 4px;
+  padding: 15 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  height: 32px;
+  font-size: 32px;
+  transition: all 0.2s ease-in-out; 
+  margin:auto;
+  font-style: oblique;
+  font-family: 'Rubik Puddles', cursive;
+  background-color:transparent;
+  border: none;
+  color:white;
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px grey;
+}
+button:hover{
+  transform: rotateZ(-15deg);
+}

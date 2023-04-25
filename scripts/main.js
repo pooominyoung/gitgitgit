@@ -34,3 +34,13 @@ if(!localStorage.getItem('name')){
 myButton.onclick = function() {
     setUserName();
 }
+
+var heading = document.querySelector('#pagename');
+heading.onclick = function(){
+    if(heading.style.color==="red"){
+        heading.style.color="mediumblue"
+    }else{
+        heading.style.color="red"
+        window.open('page2.html')
+    }
+}
