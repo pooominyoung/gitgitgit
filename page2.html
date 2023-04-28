@@ -16,6 +16,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Hanalei+Fill&family=Luckiest+Guy&family=Monofett&family=Moo+Lah+Lah&family=Rubik+Bubbles&family=Rubik+Iso&family=Zilla+Slab+Highlight:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@400;600&display=swap" rel="stylesheet">    
+    <style>
+        body{
+            height: max-content;
+        }
+
+        #named{
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            text-shadow: 3px 3px 5px rgb(255, 128, 0);
+            font-weight: 700;
+        }
+        div>button{
+            font-size: 27px;
+            margin: 30px;
+            font-weight:600;
+            color: rgb(210, 210, 210);
+            text-shadow: 3px 0px 3px rgb(4, 4, 4);
+        }
+
+        #submit{
+            font-size: 20;
+            margin: 0;
+            padding: 0;
+        }
+
+        form>div{
+            padding: 10px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -26,23 +61,28 @@
 
     <div id="buttonlist">
         <button id = "diarybt">Diary</button>
+        <button id= "named"> Profile </button>
         <button id = "photobt">Photo</button>
      </div>
      
 
-    <form action="submit">
-        <div>
-            <label for="age">How old r u?</label>
-            <input type="text" name="age" id="age">
-        </div>
-        <div>
-            <label for="instagram">Can i get your insta?</label>
-            <input type="text" name="instagram" id="isntagram">
-        </div>
-        <div>
-            <label for="todaydiary">How was your day?</label>
-            <textarea name="todaydiary" id="todaydiary" cols="30" rows="10"></textarea>
+    <form action="sub.js" id="profile" method="get">
 
+        <div>
+            <label class="profile" for="name">what is your name?</label>
+            <input type="text" class="inputbox" name="name" id="myname">
+        </div>
+        <div>
+            <label class="profile" for="age">How old r u?</label>
+            <input type="text" class="inputbox" name="age" id="age">
+        </div>
+        <div>
+            <label class="profile" for="instagram">Can i get your insta?</label>
+            <input type="text" class="inputbox" name="instagram" id="isntagram">
+        </div>
+        <div>
+            <!-- <input type="button" onclick="document.getElementById('profile').submit();"> -->
+            <a href="#" onclick="document.getElementById('profile').submit();">submit</a>  
         </div>
         
     </form>
@@ -50,7 +90,7 @@
 
 
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/sub.js"></script>
 
 </body>
 

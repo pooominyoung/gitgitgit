@@ -10,30 +10,21 @@ myImage.onclick = function(){
     }
 }
 
+var Username = document.querySelector('#user');
+let myHeading = document.querySelector('#pagename');
 
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+function setUsername () {
+    const myName= prompt("Pleas enter your name.");
+    localStorage.setItem("name", myName);
+    myHeading.textContent='Longtime no see, ${myName}';
+    setUsername();
+    } 
+     if (!localStorage.getItem("name")){
+    }else {
+    const storedName = localStorage.getItem("myname");
+    myHeading.textContent = 'Longtime no see, ${"storedName"}';       
+     }    
 
-function setUserName(){
-    let myName = prompt('Please enter your name');
-    if(!myName || myName === null){
-        setUserName();
-    } else {
-    localStorage.setItem('name', myName);
-    myHeading.textContent = 'Nice to meet you ' +myName+' BaBooo';
-    }
-}
-
-if(!localStorage.getItem('name')){
-    setUserName();
-} else {
-    let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Long time no see ' +storedName + ' BaBooo!';
-}
-
-myButton.onclick = function() {
-    setUserName();
-}
 
 var heading = document.querySelector('#pagename');
 heading.onclick = function(){
@@ -45,7 +36,11 @@ heading.onclick = function(){
     }
 }
 
+Username.onclick = setUsername;
+
+
 if(pagename2===onclick){
     style.color="red"
     window.open('bluefooted.html')
 }
+

@@ -35,13 +35,12 @@ html {
   font-size: 10px; /* px 은 'pixels' 를 의미합니다: 기본 글자 크기는 현재 10 pixels 높이입니다. */
   font-family: 'Bangers', cursive;
   width: 100vw;
+  background-color:black;
+  height: 100vh;
+  align-content: center;
 }
 
-html{
-    background-color:black;
-    height: 100%;
-    align-content: center;
-}
+    
 
 div{
     display:block;
@@ -120,7 +119,7 @@ h4{
 
 body{
     width: 80vw;
-    height: auto;
+    height: max-content;
     margin: 0 auto;
     background-color: fuchsia;
     padding: 20px 20px 20px 20px;
@@ -212,3 +211,25 @@ div textarea{
   width: 300px;
   max-height: 700px;
 }
+
+a{
+  border-radius: 4px;
+  padding: 15 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  height: 32px;
+  font-size: 32px;
+  transition: all 0.2s ease-in-out; 
+  margin:auto;
+  font-style: oblique;
+  font-family: 'Rubik Puddles', cursive;
+  background-color:transparent;
+  border: none;
+  color:white;
+  font-weight: bolder;
+  text-shadow: 3px 3px 3px grey;
+}
+a:hover{
+  transform: rotateZ(-15deg);
+}
+
