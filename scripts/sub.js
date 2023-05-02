@@ -1,5 +1,5 @@
 
-let myImage = document.querySelector('img');
+let myImage = document.querySelector('#img1');
 
 myImage.onclick = function(){
     let mySrc = myImage.getAttribute('src');
@@ -23,3 +23,7 @@ const formData = new formData(event.target);
 formElement.addEventListener('submit', savePlayerInput);
 
 const userName = formData.get('name')
+
+let godiary = document.querySelector('#diarybt');
+
+godiary.onclick = window.open('page3.html')
